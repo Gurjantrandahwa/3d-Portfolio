@@ -5,10 +5,10 @@ import {SectionWrapper} from "../hoc";
 import {fadeIn, textVariant} from "../utils/motion";
 import {projects} from "../constants";
 import Tilt from "react-tilt/dist/tilt";
-import {github} from "../assets";
+import {github,logo} from "../assets";
 
 
-const ProjectCard = ({index, name, description, tags, source_code_link, image}) => {
+const ProjectCard = ({index, name, description, tags, source_code_link, image,live_link}) => {
     return <>
         <motion.div
             variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
@@ -32,7 +32,18 @@ const ProjectCard = ({index, name, description, tags, source_code_link, image}) 
                                  className={"w-1/2 h-1/2 object-contain"}
                             />
                         </div>
+                        {
+                            live_link &&   <div onClick={() => window.open(live_link, "_blank")}
+                                                className={"border-black border w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"}
+                            >
+                                <img src={logo} alt={"github"}
+                                     className={"w-1/2 h-1/2 object-contain"}
+                                />
+                            </div>
+                        }
+
                     </div>
+
                 </div>
                 <div className={"mt-5"}>
                     <h3 className={"text-white font-bold text-[24px]"}>{name}</h3>

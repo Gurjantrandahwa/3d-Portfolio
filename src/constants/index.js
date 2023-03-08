@@ -201,6 +201,7 @@ const projects = [
         ],
         image: chatApp,
         source_code_link: "https://github.com/Gurjantrandahwa/chat_app",
+        live_link:"https://chat-app-6b27c.web.app/"
     },
     {
         name: "Netflix Clone",
@@ -222,6 +223,7 @@ const projects = [
         ],
         image: "https://portfolio-9c109.web.app/static/media/img_6.9210e801efe53eb8f0a6.png",
         source_code_link: "https://github.com/Gurjantrandahwa/NetflixClone",
+        live_link:"https://netflix-clone-4e2cc.web.app/"
     },
     {
         name: "Travel Advisor",
@@ -265,6 +267,7 @@ const projects = [
         ],
         image: blog,
         source_code_link: "https://github.com/Gurjantrandahwa/blog-app",
+        live_link:"https://blog-app-f22d2.web.app/"
     },
     {
         name: "Box Office App",
