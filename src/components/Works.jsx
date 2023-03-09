@@ -4,7 +4,6 @@ import {motion} from 'framer-motion';
 import {SectionWrapper} from "../hoc";
 import {fadeIn, textVariant} from "../utils/motion";
 import {projects} from "../constants";
-import Tilt from "react-tilt/dist/tilt";
 import {github,logo} from "../assets";
 
 
@@ -12,12 +11,7 @@ const ProjectCard = ({index, name, description, tags, source_code_link, image,li
     return <>
         <motion.div
             variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
-            <Tilt
-                options={{
-                    max: 45,
-                    scale: 1,
-                    speed: 450
-                }}
+            <div
                 className={"bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"}
             >
                 <div className={"relative w-full h-[230px]"}>
@@ -58,7 +52,7 @@ const ProjectCard = ({index, name, description, tags, source_code_link, image,li
                         })
                     }
                 </div>
-            </Tilt>
+            </div>
         </motion.div>
 
     </>
