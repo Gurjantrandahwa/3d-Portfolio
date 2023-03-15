@@ -2,7 +2,7 @@ import React from 'react'
 import {styles} from "../styles";
 import {motion} from 'framer-motion';
 import {SectionWrapper} from "../hoc";
-import {fadeIn, textVariant} from "../utils/motion";
+// import {fadeIn, textVariant} from "../utils/motion";
 import {projects} from "../constants";
 import {github,logo} from "../assets";
 
@@ -10,7 +10,8 @@ import {github,logo} from "../assets";
 const ProjectCard = ({index, name, description, tags, source_code_link, image,live_link}) => {
     return <>
         <motion.div
-            variants={fadeIn("up", "spring", 0.5 * index, 0.75)}>
+            // variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
+        >
             <div
                 className={"bg-tertiary p-5 rounded-2xl sm:w-[330px] w-full"}
             >
@@ -61,12 +62,15 @@ const ProjectCard = ({index, name, description, tags, source_code_link, image,li
 const Works = () => {
 
     return <>
-        <motion.div variants={textVariant()}>
+        <motion.div
+            // variants={textVariant()}
+        >
             <p className={styles.sectionSubText}>My work</p>
             <h2 className={styles.sectionHeadText}>Projects.</h2>
         </motion.div>
         <div className={"w-full flex"}>
-            <motion.p variants={fadeIn("", "", 0.1, 1)}
+            <motion.p
+                // variants={fadeIn("", "", 0.1, 1)}
                       className={"mt-3 text-secondary text-[17px] max-w-3xl leading-[25px]"}
             >
                 Using my skills in HTML, CSS, JavaScript and other frameworks, I have developed visually engaging and
