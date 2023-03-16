@@ -1,7 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion';
 import {styles} from "../styles";
-import {ComputersCanvas} from "./canvas";
+// import {ComputersCanvas} from "./canvas";
 
 
 const Hero = () => {
@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
 
         </div>
-        <ComputersCanvas/>
+        {/*<ComputersCanvas/>*/}
         <div className={"absolute bottom-0 w-full flex justify-center items-center"}>
             <a href={"#about"}
                className={"w-[35] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2"}>
